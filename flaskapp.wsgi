@@ -10,3 +10,5 @@ import site\
 site.addsitedir(\'91/home/ubuntu/.local/lib/python3.5/site-packages\'92)\
 sys.path.insert(0, \'91/home/ubuntu/mlapp\'92)\
 from app import app as application}
+
+gunicorn  hello:application -b xx.xxx.xxx.xx:8000
