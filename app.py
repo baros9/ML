@@ -45,7 +45,7 @@ def predict():
             #print(request.args['Temperature_in_Kelvin'])
         output =  str(round(predict_weather[0],2))
             #return int(12.0)
-        return 'Prédition : ' + output + ' ' + '°C'
+        return 'Prédiction : ' + output + ' ' + '°C'
 
 
 
