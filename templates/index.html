@@ -92,7 +92,7 @@
 		$('#submit').click(function(event){    
 		  event.preventDefault();     
 		  var exist_response = $.ajax({type:"GET",url:"/predict",data:"Airtight="+$('#Airtight').val()+"&Relative_Humidity="+$('#Relative_Humidity').val()+ "&Vapor_pressure_deficit="+$('#Vapor_pressure_deficit').val()+"&Specific_humidity="+$('#Specific_humidity').val()+"&Water_vapor_concentration="+$('#Water_vapor_concentration').val()+ "&Vapor_pressure="+$('#Vapor_pressure').val()+"&Temperature_dew_point="+$('#Temperature_dew_point').val()+"&Saturation_vapor_pressure="+$('#Saturation_vapor_pressure').val()+"&Temperature_in_Kelvin="+$('#Temperature_in_Kelvin').val(),async: false}).responseText;
-		  $('#output').text(String(exist_response)) ;
+		  $('#output').text("Prédition : " +String(exist_response)) ;
 		});
 	</script>
 </body>
