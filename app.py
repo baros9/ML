@@ -29,7 +29,7 @@ def predict():
     
      #print(model)
     if request.args['Airtight'] == '' or request.args['Relative_Humidity'] == '' or request.args['Vapor_pressure_deficit'] == '' or request.args['Specific_humidity'] == ''  or request.args['Specific_humidity']== '' or request.args['Water_vapor_concentration'] == '' or request.args['Vapor_pressure'] == '' or request.args['Temperature_dew_point'] == '' or request.args['Saturation_vapor_pressure'] == '' or request.args['Temperature_in_Kelvin'] == '' :
-         return "Veuillez remplire la formulaire"
+         return "Veuillez remplir le formulaire"
     else:
         predict_weather = model.predict([[float(request.args['Airtight']),
                                 float(request.args['Relative_Humidity']),
